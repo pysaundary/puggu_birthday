@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#090719">
+
+    <title>Happy Birthday Puggu Poo ❤️</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Animated background -->
+    <canvas id="sky"></canvas>
+    <div class="background-glow"></div>
+
+    <main class="page">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="eyebrow">A LITTLE MAGIC FOR SOMEONE SPECIAL</div>
+
+            <h1>Happy Birthday</h1>
+
+            <h2>Puggu Poo <span>♡</span></h2>
+
+            <p class="subtitle">
+                Our Little Princess, Our Biggest Happiness
+            </p>
+        </header>
+
+        <!-- Photo Slideshow -->
+        <section class="slideshow">
+
+            <button class="nav-button prev" id="prevBtn" aria-label="Previous photo">
+                &#10094;
+            </button>
+
+            <div class="gallery-window" id="galleryWindow">
+
+                <div class="slide side-slide left-slide">
+                    <img id="leftImage" src="assets/photos/photo1.jpg" alt="">
+                </div>
+
+                <div class="slide main-slide">
+                    <img id="mainImage" src="assets/photos/photo1.jpg" alt="Puggu Poo's birthday memories">
+                </div>
+
+                <div class="slide side-slide right-slide">
+                    <img id="rightImage" src="assets/photos/photo2.jpg" alt="">
+                </div>
+
+            </div>
+
+            <button class="nav-button next" id="nextBtn" aria-label="Next photo">
+                &#10095;
+            </button>
+
+        </section>
+
+        <!-- Slideshow controls -->
+        <div class="slide-controls">
+            <div id="slideDots" class="dots"></div>
+            <div id="photoCounter" class="photo-counter">01 / 02</div>
+        </div>
+
+        <div class="love-message">
+            <span>✦</span>
+            Daddy's Little World
+            <span>✦</span>
+        </div>
+
+        <!-- Music Player -->
+        <section class="music-section">
+
+            <div class="music-heading">
+                <span class="music-icon">♫</span>
+
+                <div>
+                    <div class="eyebrow">A SOUNDTRACK OF LOVE</div>
+                    <h3>Music for My Princess</h3>
+                </div>
+            </div>
+
+            <div class="now-playing">
+
+                <div class="album-art" id="albumArt">🎵</div>
+
+                <div class="track-info">
+                    <div class="track-title" id="trackTitle">
+                        Select a song
+                    </div>
+
+                    <div class="track-subtitle">
+                        Made with love for Puggu Poo ❤️
+                    </div>
+                </div>
+
+                <div class="playing-indicator" id="playingIndicator">
+                    <span></span><span></span><span></span>
+                </div>
+
+            </div>
+
+            <audio id="audioPlayer" preload="metadata"></audio>
+
+            <div class="progress-area">
+                <span id="currentTime">0:00</span>
+
+                <input type="range" id="progressBar" min="0" max="100" value="0">
+
+                <span id="duration">0:00</span>
+            </div>
+
+            <div class="player-controls">
+
+                <button id="shuffleBtn" class="secondary-control" aria-label="Toggle shuffle">⤨</button>
+
+                <button id="musicPrev" aria-label="Previous song">
+                    &#9198;
+                </button>
+
+                <button id="playBtn" class="play-button" aria-label="Play music">▶</button>
+
+                <button id="musicNext" aria-label="Next song">
+                    &#9197;
+                </button>
+
+                <button id="repeatBtn" class="secondary-control" aria-label="Toggle repeat">↻</button>
+
+            </div>
+
+            <div class="volume-control">
+                <span>🔈</span>
+                <input type="range" id="volumeBar" min="0" max="1" step="0.01" value="0.8">
+                <span>🔊</span>
+            </div>
+
+            <!-- Playlist -->
+            <div class="playlist-heading">
+                <span>YOUR PLAYLIST</span>
+                <span id="songCount">02 SONGS</span>
+            </div>
+
+            <div id="playlist" class="playlist"></div>
+
+            <p class="music-note">
+                Every song carries a little piece of our love ✨
+            </p>
+
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-heart">♥</div>
+            <p>Made with endless love</p>
+            <h3>Forever Your Daddy ❤️</h3>
+        </footer>
+
+    </main>
+
+    <script src="js/birthday.js"></script>
+
+</body>
+
+</html>
